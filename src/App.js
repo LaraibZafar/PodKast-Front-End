@@ -30,7 +30,7 @@ class App extends React.Component {
           });
         });
       } else {
-        this.setState({ currentUser: userAuth });
+        this.setState({ currentUser: userAuth }, () => alert("User Logged In"));
       }
     });
   }
@@ -44,6 +44,13 @@ class App extends React.Component {
         <Switch>
           <Route exact path="/" component={Homepage} />
           <Route path="/signup" component={LoginSignUpPage} />
+          <Route
+            exact
+            path="/signup"
+            render={() =>
+              this.state.currentUser ? <Redirect to="/" /> : <LoginSignUpPage />
+            }
+          />
         </Switch>
       </div>
     );

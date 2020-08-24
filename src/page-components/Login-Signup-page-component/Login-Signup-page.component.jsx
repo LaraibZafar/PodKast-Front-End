@@ -5,8 +5,11 @@ import Login from "../../components/login-component/login.component";
 
 const LoginSignUpPage = () => (
   <div className="login-signup">
-    <Login />
-    <Signup />
+    <div className="forms">
+      <Login />
+      <Signup />
+    </div>
+    <a href="/" className="more" />
   </div>
 );
 

@@ -10,7 +10,7 @@ const HomeBanner = () => (
         <br />
         One Podcast At A Time
       </p>
-      <a href="/" class="more" />
+      <a href="/signup" className="more" />
     </div>
   </div>
 );

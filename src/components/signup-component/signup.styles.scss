@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Passion+One:wght@700;900&display=swap");
+
 .signup-container {
   display: flex;
   flex-direction: column;
@@ -8,13 +10,18 @@
   .signup-text {
     padding-bottom: 20px;
     h1 {
-      font-weight: 900;
-      font-size: 34px;
+      font-family: "Passion One", cursive;
+      color: white;
+      opacity: 45%;
+      font-weight: 700;
+      font-size: 32px;
+      margin-bottom: 40px;
     }
     span {
+      font-family: "Passion One", cursive;
       font-weight: 600;
-      font-size: 18px;
-      color: #4a4a4a;
+      font-size: 20px;
+      color: white;
     }
   }
 }
