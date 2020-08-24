@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Open+Sans+Condensed:wght@300&display=swap");
+.custom-button {
+  background-color: #70c7be;
+  color: white;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  border: none;
+  width: 270px;
+  min-width: 50px;
+  min-height: 55px;
+  font-size: 18px;
+  font-weight: bolder;
+  font-family: "Nunito", sans-serif;
+  outline: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+
+  &:hover {
+    background-color: white;
+    color: #70c7be;
+  }
+
+  &.Google {
+    background-color: #4285f4;
+    color: white;
+    outline: 1px solid #4285f4;
+
+    &:hover {
+      background-color: #407adb;
+      border: none;
+    }
+  }
+  &.inverted {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    position: absolute;
+    outline: none;
+
+    &:hover {
+      background-color: black;
+      color: white;
+      border: none;
+    }
+  }
+}

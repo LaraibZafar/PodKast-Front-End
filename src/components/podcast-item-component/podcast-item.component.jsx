@@ -1,6 +1,8 @@
 import React from "react";
 import "./podcast-item.styles.scss";
 
+import VideoModal from "../video-modal-component/video-modal.component";
+
 const PodcastItem = ({ videoId, videoImage, title }) => (
   <div className="podcast-item">
     <div
@@ -9,13 +11,13 @@ const PodcastItem = ({ videoId, videoImage, title }) => (
         backgroundImage: `url(${videoImage})`,
       }}
     ></div>
-    <div className="item=inner">
+    <div className="item-inner">
       <h1>{title}</h1>
       <p>
         Interdum amet accumsan placerat commodo ut amet aliquam blandit nunc
         tempor lobortis nunc non. Mi accumsan.
       </p>
-      <button>Poopi</button>
+      <VideoModal className="modal" videoId={videoId} />
     </div>
   </div>
 );

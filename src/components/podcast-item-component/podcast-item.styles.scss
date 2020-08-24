@@ -1,32 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Open+Sans+Condensed:wght@300&display=swap");
 .podcast-item {
   border-radius: 4px;
-  margin-bottom: 2em;
   background: #2c2c32;
   text-align: center;
-  margin: 0 1em 2em 1em;
+  margin-top: 70px;
   min-width: 26%;
   width: 26%;
   height: fit-content;
   text-align: center;
-  margin-top: 60px;
+  margin: 30px 10px 0px 10px;
 
   .item-image {
     width: 100%;
     height: 55vh;
     background-size: contain;
     border-radius: 4px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     background-repeat: no-repeat;
   }
   h1 {
-    font-family: "Source Sans Pro", sans-serif;
+    font-family: "Nunito", sans-serif;
     color: white;
-    margin-bottom: 20px;
-    font-size: 17px;
+    margin-bottom: 0px;
+    font-size: 19px;
     font-weight: 600;
   }
   p {
-    font-family: "Source Sans Pro", sans-serif;
+    font-family: "Nunito", sans-serif;
     color: rgba(255, 255, 255, 0.75);
     font-weight: 400;
     font-size: 14px;

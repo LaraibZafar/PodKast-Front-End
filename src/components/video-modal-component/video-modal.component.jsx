@@ -1,6 +1,9 @@
 import React, { Component } from "react";
 import ModalVideo from "react-modal-video";
 import "react-modal-video/scss/modal-video.scss";
+import "./video-modal.styles.scss";
+
+import CustomButton from "../custom-button-component/custom-button.component";
 
 export class VideoModal extends Component {
   constructor() {
@@ -18,7 +21,7 @@ export class VideoModal extends Component {
   render() {
     const { videoId } = this.props;
     return (
-      <div>
+      <div className="modal-inner">
         <div>
           <ModalVideo
             channel="youtube"
@@ -26,7 +29,7 @@ export class VideoModal extends Component {
             videoId={videoId}
             onClose={() => this.setState({ isOpen: false })}
           />
-          <button onClick={this.openModal}>Open</button>
+          <CustomButton onClick={this.openModal}>Open</CustomButton>
         </div>
       </div>
     );
