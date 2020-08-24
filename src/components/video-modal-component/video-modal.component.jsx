@@ -29,7 +29,7 @@ export class VideoModal extends Component {
             videoId={videoId}
             onClose={() => this.setState({ isOpen: false })}
           />
-          <CustomButton onClick={this.openModal}>Open</CustomButton>
+          <CustomButton onClick={this.openModal}>Watch</CustomButton>
         </div>
       </div>
     );
